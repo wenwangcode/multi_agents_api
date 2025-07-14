@@ -70,4 +70,7 @@ Edit
 multi_tool_agent/agent.py
 So you must explicitly tell ADK via ADK_APP_MODULE=multi_tool_agent.agent.
 
-Let me know what you see after running step 3 — and I’ll help debug immediately.
+
+Run:
+
+python3 -m multi_tool_agent.api

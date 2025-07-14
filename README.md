@@ -7,10 +7,10 @@ multiAgent/
 │   ├── agent.py            ✅ defines `root_agent`
 │   └── ...
 ├── .env                    ✅ (optional, for ADK_APP_MODULE)
+
+
 ✅ 2. Your multi_tool_agent/agent.py must contain:
-python
-Copy
-Edit
+
 from google.adk.agents import Agent
 
 root_agent = Agent(

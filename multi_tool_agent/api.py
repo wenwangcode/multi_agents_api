@@ -4,10 +4,9 @@ import uvicorn
 from fastapi import FastAPI
 from google.adk.cli.fast_api import get_fast_api_app
 from dotenv import load_dotenv
-os.environ["ADK_APP_MODULE"] = "agent"
 
 # Path to the directory containing your agent code (e.g., where agent.py lives)
-AGENTS_DIR = os.path.dirname(os.path.abspath(__file__))
+AGENTS_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Use a SQLite file for session history
 SESSION_DB_URL = "sqlite:///./sessions.db"
